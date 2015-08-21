@@ -33,7 +33,10 @@
 }
 
 - (UICollectionViewLayoutAttributes*)layoutAttributesForItemAtIndexPath:(nonnull NSIndexPath *)indexPath {
-    
+    UICollectionViewLayoutAttributes* attributes = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
+    //TODO get image from data source and get aspect ratio of it
+    // TODO calculate count of images per row by this width
+    return attributes;
 }
 
 - (BOOL)shouldInvalidateLayoutForBoundsChange:(CGRect)newBounds {
